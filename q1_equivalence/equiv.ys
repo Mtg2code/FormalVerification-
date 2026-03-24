@@ -1,0 +1,5 @@
+read_verilog ref.v impl.v
+equiv_make ref impl equiv
+prep -top equiv
+equiv_simple
+equiv_status

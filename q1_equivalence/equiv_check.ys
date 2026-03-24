@@ -1,0 +1,8 @@
+read_verilog design.v
+rename top top_orig
+read_verilog opt.v
+rename top top_opt
+equiv_make top_orig top_opt equiv
+prep -top equiv
+equiv_simple
+equiv_status

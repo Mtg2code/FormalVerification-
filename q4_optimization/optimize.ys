@@ -1,0 +1,4 @@
+read_verilog design.v
+prep -top top
+opt
+write_verilog opt.v

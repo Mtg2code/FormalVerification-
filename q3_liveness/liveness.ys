@@ -1,0 +1,3 @@
+read_verilog -formal counter_live.v
+prep -top counter
+write_aiger -zinit counter_live.aig
